@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('images/snowflake.png');
+    background-size: 15%;
+    background-color: #d9f7f7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.4em 0 0 0;
+}
+
+#keyboard-container {
+    display: flex;
+    gap: 1px;
+    max-width: 310px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#guess-container {
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid #999;
+    border-radius: 5px;
+    max-width: 330px;
+    justify-content: center;
+    background-color: white;
+}
+
+button.letter{
+    padding: 8px;
+    border: none;
+    width: 32px;
+    border-radius: 2px;
+    background-color: #c03a2b;
+    color: white;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button.letter:hover, button.letter:focus{
+    background-color: #f0c419;
+    color: black;
+}
+
+button.letter:active {
+    background-color: #d9f7f7;
+    color: black;
+}
+
+.guess-char {
+    padding: 12px 0px;
+    font-size: 1.5em;
+    width: 40px;
+    text-align: center
+}
+
+#message {
+    padding: 12px 0px;
+    font-size: 1.5em;
+    max-width: 600px;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+.snowman-container {
+    position: relative;
+    width: 300px;
+    margin: 2em auto 0 auto;
+    height: 300px;
+    margin-bottom: 0.4em;
+}
+
+.snowman-part {
+    max-width: 300px;
+    position: absolute;
+}
+
+.body {
+    bottom: 0;
+}
+
+.head {
+    bottom: 145px
+}
+
+.nose {
+    bottom: 170px;
+}
+
+.scarf {
+    bottom: 50px;
+}
+
+.hat {
+    bottom: 250px;
+}
+
+.arm {
+    bottom: 50px
+}
+
+.sunglasses, .puddle {
+    position: absolute;
+}
+
+.sunglasses {
+    width: 120px;
+    top: 58px;
+    left: 90px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.puddle {
+    width: 290px;
+    top: 270px;
+    left: 5px;
+    z-index: -2
+}
+
+.rules p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 0.4em;
+
+}
+
+#start-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.6em;
+    text-align: center;
+    padding: 6px 20px;
+    background-color: antiquewhite;
+    font-size: 1.5rem;
+    border-radius: 6px;
+}
+
+.word-display {
+    letter-spacing: 16px;
+    text-align: center;
+    font-size: 16px;
+}
